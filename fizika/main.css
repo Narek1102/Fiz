@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    height: 100vh;
+}
+.menu {
+    background: #dfdfdf;
+    width: 100%;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+.menu-buttons{
+    width: 55%;
+    height: 100%;
+    max-width: 950px;
+    background-color: #dfdfdf;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 320PX;
+}
+.nav-logo{
+    width: 145px;
+    height: 145px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoZVZ6eCenhqR0pT2aSYjGCyA-Gzfb8sBfbA&s");
+    background-size: cover;
+    top: 5px;
+    left: 5px;
+}
+button {
+    max-height: 70px;
+    width: 100%;
+    height: 60%;
+    box-sizing: border-box;
+    padding: 0 5px;
+    background: #f2f2f2;
+    color: #111;
+    font-weight: 600;
+    border: 0;
+    box-shadow: 0 0 17px 5px #f6f6f6;
+    border-radius: 5px;
+    transition: 150ms;
+    font-size: 16px;
+    max-width: 180px;
+    &:hover {
+        position: relative;
+        bottom: 5px;
+        box-shadow: 0 10px 15px 5px #f6f6f6;
+    }
+    @media(max-width: 715px) {
+        font-size: 14px;
+    }
+}
+button:active {
+    box-shadow: 0 10px 15px 5px #f6f6f6,0 0 5px 2px #f9f9f9 inset;
+}
+.menu-butt{
+    max-height: 70px;
+    color: white;
+    height: 100%;
+    font-size: 21px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+}
+.main-carusel{
+    width: 99%;
+    height: 500px;
+}
+.header-imgs{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f9f9f9;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+.header-img{
+    background-size: cover;
+    width: 32%;
+    min-width: 320px;
+    height: 220px;
+    box-shadow: 0 10px 20px 0 #f5f5f5,0 0 5px 1px #f5f5f5 inset;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-sizing: border-box;
+    transition: 250ms;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-grow: 0.75;
+    p{
+        color: #fff;
+    font-weight: 600;
+    visibility: hidden;
+    margin-bottom: 20px;
+    }
+    &:hover {
+     p {
+            visibility: visible;
+    }
+}
+}
+/* .header-img p {
+    color: #fff;
+    font-weight: 600;
+    visibility: hidden;
+} */
+.header-img1{
+    background-image: url("https://resources.cdn.imdproc.am/bf31684d-6274-47e0-8871-1754e3635725/izluchenie.gif");
+    &:hover {
+        background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url("https://resources.cdn.imdproc.am/bf31684d-6274-47e0-8871-1754e3635725/izluchenie.gif");
+    }
+}
+.header-img2{
+    background-image: url("https://resources.cdn.imdproc.am/87fbd6f2-a2ac-4ce8-a3b9-2495813eacb3/brizdn.gif");
+    background-position: 50% 10%;
+    &:hover {
+        background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url("https://resources.cdn.imdproc.am/87fbd6f2-a2ac-4ce8-a3b9-2495813eacb3/brizdn.gif");
+    }
+}
+.header-img3{
+    background-image: url("https://resources.cdn.imdproc.am/e65941a1-a445-4ee4-9206-68e194021723/teplpprovodnost.gif");
+    &:hover {
+        background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url("https://resources.cdn.imdproc.am/e65941a1-a445-4ee4-9206-68e194021723/teplpprovodnost.gif");
+    }
+}
+.div {
+    position: relative;
+    top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 2px 5px;
+}
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 1100px;
+}
+img {
+    min-width: 320px;
+    animation: appear 15s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
+}
+#zzvcnox {
+    max-width: 640px;
+    min-width: 319px;
+    height: 20%;
+    flex-grow: 1;
+}
+h2 {
+    font-size: 36px;
+    font-family: "Noto Serif Armenian", serif;
+    margin: 0;
+    animation: appear 15s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
+}
+h1 {
+    font-size: 36px;
+    font-family: "Noto Serif Armenian", serif;
+    animation: appear 15s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
+}
+p {
+    font-family: "Noto Sans Armenian", serif;
+    width: 98%;
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #111;
+    transition: 150ms;
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.4;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+.hr1{
+    background-color: greenyellow;
+    width: 100%;
+    height: 2px;
+    border: 0;
+}
+.green{
+    color:  rgb(0, 175, 0);
+}
+.hr2{
+    background-color: greenyellow;
+    bottom: 0;
+}
+@media (max-width: 681px) {
+    .nav-logo {
+        visibility: hidden;
+    }
+}
+@media (max-width: 380px) {
+    .menu-buttons {
+        width: 100%;
+    }
+    h1, h2 {
+        font-size: 26px;
+    }
+    #zzvcnox {
+        height: 187px !important;
+    }
+}
+@media (max-width: 426px) {
+    #zzvcnox {
+        height: 200px;
+    }
+    h1,h2 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 321px) {
+    .menu-buttons {
+        width: 100%;
+        flex-wrap: wrap;
+        height: 100%;
+
+    }
+    .menu {
+        height: 150px;
+    }
+    button {
+        width: 100% !important;
+    }
+    #zzvcnox {
+        height: 160px !important;
+    }
+    h1,h2 {
+        font-size: 25px !important;
+    }
+}
